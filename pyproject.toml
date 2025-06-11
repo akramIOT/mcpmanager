@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcpmanagement"
-version = "0.2.0"
+name = "mcp-deployment"
+version = "0.2.2"
 description = "Secure MCP Server Management with Dynamic Discovery"
 readme = "README.md"
 requires-python = ">=3.8"

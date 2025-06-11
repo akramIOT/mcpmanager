@@ -1,9 +1,10 @@
-# MCPManager - One Click MCP Server Deployment & Secured MCP Server Discovery, Management
+# MCPManager - Secure MCP Server Management
 
+![MCPManager Logo](docs/images/toolhive.png)
 
 MCPManager is a comprehensive, production-ready platform for deploying, managing, and securing MCP (Model Context Protocol) servers with advanced features including multi-runtime support, observability, and enterprise-grade security.
 
-##  Key Features
+## 🚀 Key Features
 
 ### Core Management
 - **Dynamic MCP Server Discovery**: Automatically discover and configure MCP servers from registries
@@ -35,25 +36,25 @@ MCPManager is a comprehensive, production-ready platform for deploying, managing
 
 ### Basic Installation
 ```bash
-pip install mcpmanager
+pip install mcp-deployment
 ```
 
 ### With Optional Features
 ```bash
 # With Kubernetes support
-pip install mcpmanager[kubernetes]
+pip install mcp-deployment[kubernetes]
 
 # With telemetry support
-pip install mcpmanager[telemetry]
+pip install mcp-deployment[telemetry]
 
 # With authentication support
-pip install mcpmanager[auth]
+pip install mcp-deployment[auth]
 
 # Full installation
-pip install mcpmanager[kubernetes,telemetry,auth]
+pip install mcp-deployment[kubernetes,telemetry,auth]
 ```
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### Basic Usage
 ```bash
@@ -373,10 +374,10 @@ helm install mcpmanager-crds mcpmanager/mcpmanager-crds
 ### Manual Deployment
 ```bash
 # Apply CRDs
-kubectl apply -f https://raw.githubusercontent.com/mcpmanager/mcpmanager/main/deploy/crds/
+kubectl apply -f https://raw.githubusercontent.com/mcpmanager/mcp-deployment/main/deploy/crds/
 
 # Deploy operator
-kubectl apply -f https://raw.githubusercontent.com/mcpmanager/mcpmanager/main/deploy/operator/
+kubectl apply -f https://raw.githubusercontent.com/mcpmanager/mcp-deployment/main/deploy/operator/
 ```
 
 ### MCP Server CRD Example
@@ -449,8 +450,8 @@ GET /metrics
 ### Building from Source
 ```bash
 # Clone repository
-git clone https://github.com/mcpmanager/mcpmanager.git
-cd mcpmanager
+git clone https://github.com/mcpmanager/mcp-deployment.git
+cd mcp-deployment
 
 # Install in development mode
 pip install -e .[dev]
@@ -554,7 +555,7 @@ mcpm run my-server \\
   --secret DB_PASSWORD=my-db-password
 ```
 
-##  Troubleshooting
+## 🆘 Troubleshooting
 
 ### Common Issues
 
@@ -616,7 +617,8 @@ MCPManager is contributed as an **Initial Open Source Project** under the Apache
 For enterprise-class features, commercial licensing, and support agreements, please contact the maintainer and author of this project:
 
 **Akram Sheriff**
-- **Email**: [sheriff.akram.usa@gmail.com]
+
+- **Email**: sheriff.akram.usa@gmail.com 
 - **Enterprise Inquiries**: For commercial licensing, support contracts, and enterprise features
 
 ### Open Source vs Enterprise Features
@@ -637,20 +639,20 @@ For enterprise-class features, commercial licensing, and support agreements, ple
 
 ## 🤝 Community
 
-- **GitHub**: [https://github.com/mcpmanager/mcpmanager](https://github.com/mcpmanager/mcpmanager)
+- **GitHub**: [https://github.com/mcpmanager/mcp-deployment](https://github.com/mcpmanager/mcp-deployment)
 - **Documentation**: [https://docs.mcpmanager.io](https://docs.mcpmanager.io)
-- **Issues**: [https://github.com/mcpmanager/mcpmanager/issues](https://github.com/mcpmanager/mcpmanager/issues)
-- **Discussions**: [https://github.com/mcpmanager/mcpmanager/discussions](https://github.com/mcpmanager/mcpmanager/discussions)
+- **Issues**: [https://github.com/mcpmanager/mcp-deployment/issues](https://github.com/mcpmanager/mcp-deployment/issues)
+- **Discussions**: [https://github.com/mcpmanager/mcp-deployment/discussions](https://github.com/mcpmanager/mcp-deployment/discussions)
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-This MCPManager Project is built by Akram leveraging on top of excellent open-source projects:
-
+MCPManager is built on top of excellent open-source projects:
 - [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol)
 - [Docker](https://www.docker.com/)
 - [Kubernetes](https://kubernetes.io/)
 - [OpenTelemetry](https://opentelemetry.io/)
 - [Sigstore](https://www.sigstore.dev/)
+
 ---
 
 **Made with ❤️ by the MCPManager team**
