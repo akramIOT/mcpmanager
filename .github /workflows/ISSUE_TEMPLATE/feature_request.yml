@@ -1,0 +1,126 @@
+name: Feature Request
+description: Suggest an idea for MCPManager
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - akram-sheriff
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: A clear and concise description of what the problem is...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: A clear and concise description of what you want to happen...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered
+      placeholder: What other approaches have you thought about?
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What category does this feature belong to?
+      options:
+        - Core Management
+        - Security & Permissions
+        - Observability
+        - CLI/API
+        - Kubernetes Integration
+        - Performance
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my adoption
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe your specific use case for this feature
+      placeholder: How would you use this feature in practice?
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: Do you have any ideas on how this could be implemented?
+      placeholder: Any technical approaches or suggestions?
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Provide examples of similar features in other tools or mockups
+      placeholder: Links, screenshots, or descriptions of similar implementations
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Feature Scope
+      description: What areas would this feature affect? (Check all that apply)
+      options:
+        - label: CLI commands
+        - label: REST API
+        - label: Configuration
+        - label: Security model
+        - label: Container runtime integration
+        - label: Kubernetes operator
+        - label: Documentation
+        - label: Performance
+        - label: Observability
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Are you interested in contributing to this feature?
+      options:
+        - label: I'm willing to contribute code for this feature
+        - label: I'm willing to help with testing
+        - label: I'm willing to help with documentation
+        - label: I can provide feedback during development
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
