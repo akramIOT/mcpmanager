@@ -1,0 +1,103 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcpmanager"
+version = "0.1.0"
+description = "Secure MCP Server Management with Dynamic Discovery"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+authors = [
+    {name = "MCPManager Contributors"}
+]
+keywords = ["mcp", "model-context-protocol", "containers", "docker"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+]
+
+dependencies = [
+    "click>=8.0.0",
+    "docker>=6.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.25.0",
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.20.0",
+    "aiohttp>=3.8.0",
+    "cryptography>=3.0.0",
+    "keyring>=23.0.0",
+    "pyyaml>=6.0",
+    "jsonschema>=4.0.0",
+    "aiofiles>=23.0.0",
+    "httpx>=0.24.0",
+    "psutil>=5.8.0",
+]
+
+[project.optional-dependencies]
+kubernetes = [
+    "kubernetes>=28.0.0",
+]
+telemetry = [
+    "opentelemetry-api>=1.20.0",
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-exporter-otlp-proto-grpc>=1.20.0",
+    "opentelemetry-exporter-prometheus>=0.40b0",
+    "opentelemetry-exporter-jaeger-thrift>=1.20.0",
+    "opentelemetry-instrumentation-fastapi>=0.40b0",
+    "opentelemetry-instrumentation-httpx>=0.40b0",
+    "opentelemetry-instrumentation-requests>=0.40b0",
+    "opentelemetry-instrumentation-asyncio>=0.40b0",
+    "opentelemetry-instrumentation-logging>=0.40b0",
+    "opentelemetry-instrumentation-urllib3>=0.40b0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "flake8>=5.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+    "safety>=2.0.0",
+    "bandit>=1.7.0",
+]
+auth = [
+    "authlib>=1.2.0",
+]
+
+[project.scripts]
+mcpm = "mcpmanager.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

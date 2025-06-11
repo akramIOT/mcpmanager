@@ -1,0 +1,15 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include Makefile
+include Dockerfile
+include .gitignore
+
+recursive-include src/mcpmanager *.py
+recursive-include examples *.json *.yaml *.yml
+recursive-include tests *.py
+
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.so
