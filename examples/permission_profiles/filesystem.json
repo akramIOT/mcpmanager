@@ -1,0 +1,19 @@
+{
+  "read": [
+    "/workspace",
+    "/home/user/documents",
+    "/tmp"
+  ],
+  "write": [
+    "/tmp",
+    "/workspace/output"
+  ],
+  "network": {
+    "outbound": {
+      "insecure_allow_all": false,
+      "allow_transport": [],
+      "allow_host": [],
+      "allow_port": []
+    }
+  }
+}

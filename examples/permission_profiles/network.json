@@ -1,0 +1,12 @@
+{
+  "read": [],
+  "write": [],
+  "network": {
+    "outbound": {
+      "insecure_allow_all": false,
+      "allow_transport": ["tcp", "udp"],
+      "allow_host": ["api.github.com", "httpbin.org", "*.example.com"],
+      "allow_port": [80, 443, 8080]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+auto_discovery_enabled: true
+registry_url: null
+ca_cert_path: null
+secrets_provider: "encrypted"
+registered_clients:
+  - "vscode"
+  - "cursor"
+
+oidc:
+  issuer_url: "https://auth.example.com"
+  client_id: "mcpmanager-client"
+  client_secret: null
+  scopes:
+    - "openid"
+    - "profile"
+    - "email"
+
+telemetry:
+  enabled: false
+  endpoint: null
+  enable_prometheus_metrics: false
