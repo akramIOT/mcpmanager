@@ -1,4 +1,4 @@
-# MCPManager - Secure MCP Server Management
+# MCPManager - One Click MCP Server Deployment & Secured MCP Server Discovery, Management
 
 
 MCPManager is a comprehensive, production-ready platform for deploying, managing, and securing MCP (Model Context Protocol) servers with advanced features including multi-runtime support, observability, and enterprise-grade security.
