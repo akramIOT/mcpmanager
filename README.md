@@ -2,7 +2,7 @@
 
 MCPManager is a comprehensive, production-ready platform for deploying, managing, and securing MCP (Model Context Protocol) servers with advanced features including multi-runtime support, observability, and enterprise-grade security.
 
-## 🚀 Key Features
+##  Key Features
 
 ### Core Management
 - **Dynamic MCP Server Discovery**: Automatically discover and configure MCP servers from registries
@@ -30,7 +30,7 @@ MCPManager is a comprehensive, production-ready platform for deploying, managing
 - **Client Auto-configuration**: Seamless integration with VS Code, Cursor, and other clients
 - **RESTful API**: Complete REST API for automation and integration
 
-## 📦 Installation
+##  Installation
 
 ### Basic Installation
 ```bash
@@ -52,7 +52,7 @@ pip install mcp-deployment[auth]
 pip install mcp-deployment[kubernetes,telemetry,auth]
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Basic Usage
 ```bash
@@ -90,7 +90,7 @@ mcpm run github --permission-profile my-profile
 mcpm config telemetry enable --endpoint http://jaeger:14268/api/traces
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 MCPManager provides a comprehensive platform for MCP server management:
 
@@ -108,7 +108,7 @@ MCPManager provides a comprehensive platform for MCP server management:
                        └──────────────────┘
 ```
 
-## 📖 Comprehensive CLI Reference
+##  Comprehensive CLI Reference
 
 ### Server Management
 ```bash
@@ -210,7 +210,7 @@ mcpm version                              # Show version
 mcpm version --detailed                   # Detailed version info
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Configuration File
 MCPManager uses a YAML configuration file located at `~/.mcpmanager/config.yaml`:
@@ -271,7 +271,7 @@ export MCPM_REGISTRY_URL=https://registry.mcpmanager.io
 export MCPM_VERIFY_IMAGES=true
 ```
 
-## 🔒 Security Features
+## Security Features
 
 ### Permission Profiles
 MCPManager includes built-in permission profiles:
@@ -309,7 +309,7 @@ mcpm cert expiring --days 30             # Find expiring certificates
 mcpm cert expired                        # Find expired certificates
 ```
 
-## 📊 Observability
+## Observability
 
 ### OpenTelemetry Integration
 MCPManager provides comprehensive observability:
@@ -354,7 +354,7 @@ mcpm run "go://github.com/user/mcp-server@latest"  # Run Go module
 mcpm run "go://github.com/user/mcp-server@v1.2.3"  # Specific version
 ```
 
-## 🚢 Kubernetes Deployment
+## Kubernetes Deployment
 
 ### Using Helm Charts
 ```bash
@@ -401,7 +401,7 @@ spec:
       cpu: "200m"
 ```
 
-## 🌐 REST API
+## REST API
 
 MCPManager provides a comprehensive REST API:
 
@@ -443,7 +443,7 @@ GET /api/v1/health
 GET /metrics
 ```
 
-## 🔧 Development
+## Development
 
 ### Building from Source
 ```bash
@@ -468,7 +468,7 @@ black . && isort . && flake8
 4. Add tests
 5. Submit a pull request
 
-## 📈 Production Deployment
+## Production Deployment
 
 ### System Requirements
 - **CPU**: 2+ cores recommended
@@ -508,7 +508,7 @@ telemetry:
   sampling_rate: 0.1  # 10% sampling
 ```
 
-## 📚 Examples
+##  Examples
 
 ### Example: GitHub MCP Server
 ```bash
@@ -553,7 +553,7 @@ mcpm run my-server \\
   --secret DB_PASSWORD=my-db-password
 ```
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
