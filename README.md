@@ -2,6 +2,8 @@
 
 MCPManager is a comprehensive, production-ready platform for deploying, managing, and securing MCP (Model Context Protocol) servers with advanced features including multi-runtime support, observability, and enterprise-grade security.
 
+PyPi Reference:  https://pypi.org/project/mcp-deployment/
+
 ##  Key Features
 
 ### Core Management
