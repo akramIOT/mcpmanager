@@ -32,6 +32,15 @@ PyPi Reference:  https://pypi.org/project/mcp-deployment/
 - **Client Auto-configuration**: Seamless integration with VS Code, Cursor, and other clients
 - **RESTful API**: Complete REST API for automation and integration
 
+### Prerequisites
+MCPMANAGER currently works on macOS and Linux using Docker or Podman.
+
+For client auto-discovery/configuration, a supported client:
+
+VS Code (v1.99.0 or newer) with an active GitHub Copilot subscription
+Cursor
+Roo Code (VS Code extension)
+
 ##  Installation
 
 ### Basic Installation
