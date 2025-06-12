@@ -639,10 +639,9 @@ For enterprise-class features, commercial licensing, and support agreements, ple
 
 ## 🤝 Community
 
-- **GitHub**: [https://github.com/mcpmanager/mcp-deployment](https://github.com/mcpmanager/mcp-deployment)
-- **Documentation**: [https://docs.mcpmanager.io](https://docs.mcpmanager.io)
-- **Issues**: [https://github.com/mcpmanager/mcp-deployment/issues](https://github.com/mcpmanager/mcp-deployment/issues)
-- **Discussions**: [https://github.com/mcpmanager/mcp-deployment/discussions](https://github.com/mcpmanager/mcp-deployment/discussions)
+- **GitHub**: [https://github.com/akramIOT/mcpmanager](https://github.com/akramIOT/mcpmanager)
+- **Issues**: [https://github.com/akramIOT/mcpmanager/issues](https://github.com/akramIOT/mcpmanager/issues)
+- **Discussions**: [https://github.com/akramIOT/mcpmanager/discussions](https://github.com/akramIOT/mcpmanager/discussions)
 
 ## 🙏 Acknowledgments
 
